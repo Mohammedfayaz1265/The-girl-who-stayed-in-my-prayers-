@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-eb-garamond {
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+  .font-amiri {
+    font-family: 'Amiri', serif;
+  }
+  .font-jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Studio & Dark Theme Colors */
+.bg-studio-dark {
+  background-color: #0A0A0B;
+}
+
+.bg-sidebar-dark {
+  background-color: #121315;
+}
+
+.bg-canvas-dark {
+  background-color: #1A1C20;
+}
+
+.border-studio {
+  border-color: #2A2D31;
+}
+
+.text-gold {
+  color: #C5A059;
+}
+
+.border-gold {
+  border-color: #C5A059;
+}
+
+/* Paper Textures */
+.paper-cream {
+  background-color: #FCF9F3;
+  color: #F5F5F5;
+  background-image: radial-gradient(#e5dec9 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.paper-sepia {
+  background-color: #F4ECD8;
+  color: #F5F5F5;
+}
+
+.paper-midnight {
+  background-color: #16171a;
+  color: #F5F5F5;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #c5a059 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.book-page-shadow {
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(197, 160, 89, 0.08);
+}
+
+.spine-shadow-left {
+  box-shadow: inset 20px 0 25px -10px rgba(0, 0, 0, 0.18);
+}
+
+.spine-shadow-right {
+  box-shadow: inset -20px 0 25px -10px rgba(0, 0, 0, 0.18);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3d42;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+/* Story Text Contrast Colors - All themes now use the Midnight text color #F5F5F5 */
+.story-text-cream {
+  color: #F5F5F5 !important;
+}
+
+.story-text-sepia {
+  color: #F5F5F5 !important;
+}
+
+.story-text-midnight {
+  color: #F5F5F5 !important;
+}
+
+/* Custom Selection Highlight */
+::selection {
+  background-color: #C5A059;
+  color: #000000;
+}
+
+/* Drop cap styling */
+.drop-cap-gold {
+  clear: both;
+}
+
+.drop-cap-gold::first-letter {
+  font-size: 3.5rem;
+  line-height: 0.85;
+  float: left;
+  margin-right: 0.75rem;
+  margin-bottom: 0.1rem;
+  margin-top: 0.15rem;
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+  color: #C5A059;
+  font-weight: 700;
+  display: block;
+}

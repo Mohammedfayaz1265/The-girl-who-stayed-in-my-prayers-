@@ -1,0 +1,6 @@
+{
+  "name": "The Girl Who Stayed in My Prayers",
+  "description": "An elegant, interactive illustrated novel written by Shaik Maaz and edited by Mohammed Fayaz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
